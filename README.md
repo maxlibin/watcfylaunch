@@ -1,7 +1,8 @@
 ##Watcfy Launch Page
 ####Quick setup a coming soon page
 This package helps you quickly setup a coming soon or beta page with email signup option. Adding your own text by changing routes from default page:
-<pre>Router.route('/', {
+```js
+Router.route('/', {
 	'name':"watcfyLaunch",
 	'template':'watcfyLaunch',
     'onBeforeAction': function () {
@@ -14,6 +15,6 @@ This package helps you quickly setup a coming soon or beta page with email signu
         };
         this.next();
     }
-});</pre>
-
+});
+````
 ![example](example.png)
