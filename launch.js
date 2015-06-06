@@ -33,14 +33,15 @@ Meteor.startup(function () {
         "submit form": function (e, tmpl) {
             e.preventDefault();
             var _email = tmpl.find('#exampleInputEmail1').value;
+            var w = tmpl.find('#wrapper');
+
 
             Meteor.call('watcfyLaunch_signup', _email, function (err, res) {
-                if(err)
-                    $(tmpl).find('form').prepend('<p>'+err.reason+'</p>');
-                else
-                    tmpl.find('form').style.visibility = "hidden";
-                    var w = tmpl.find('#wrapper');
+                if(err){
+                    w.innerHTML = w.innerHTML + "<p>"+err.reason+"</p>";
+                } else{
                     w.innerHTML = w.innerHTML + "<p class='thanks'>Thank you for signup, you will be one of the first to use this service.</p>";
+                }
             });
         }
     })
