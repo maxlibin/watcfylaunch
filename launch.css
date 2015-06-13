@@ -14,6 +14,14 @@ body {
     padding:0;
 }
 
+body,
+html,
+.content,
+#wrapper {
+    height: 100%;
+    overflow: hidden;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
@@ -130,7 +138,6 @@ form.signup input.form-control:focus {
     background: url('img/main-bg.jpg') no-repeat center top;
     background-attachment: relative;
     background-position: center center;
-    min-height: 650px;
     width: 100%;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
@@ -146,6 +153,7 @@ form.signup input.form-control:focus {
 
 #wrapper.white {
     background: url('img/main-bg-white.jpg') no-repeat center top;
+    background-size: cover;
 }
 
 #wrapper.white h1,

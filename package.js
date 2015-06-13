@@ -13,6 +13,7 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom('1.1.0.2');
   api.use('iron:router@1.0.9');
+  api.use('http@1.1.0');
   api.use('mongo', ['client', 'server']);
   api.use('templating', 'client');
 
