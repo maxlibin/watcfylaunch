@@ -2,7 +2,7 @@
 ####Quick setup a coming soon page
 This package helps you quickly setup a coming soon or beta page with email signup option. 
 
-now added a hook for slack, whenever users signup on your input box it will send a message on your slack channel, change the url in launchCollection.js
+now added a hook for slack, whenever users signup on your input box it will send a message on your slack channel, change the url in launchCollection.js, url can be generated from: https://api.slack.com/incoming-webhooks
 
 ```js
 var url = "add your hook url";
